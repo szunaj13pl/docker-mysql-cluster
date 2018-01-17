@@ -1,11 +1,16 @@
 # Cluster MySQL with Docker
+### Image contains nodes
+* Management Node
+* Data Node
+* SQL Node
+---
 ##Introduction
 
 
 ##Build
 
     git clone https://github.com/szunaj13pl/docker-mysql-cluster.git
-    cd MySQL-Cluster
+    cd docker-mysql-cluster
 
 
 ## Requirements
@@ -17,11 +22,10 @@ Run command `docker run hello-world` to check if tou have Docker instaled on you
 
 * Proper **network setup**. Every machines need to see each other.
 Run command from _HOST_ to _REMOTE_HOST_
-`ping -c 3 <remote_host_address> && echo "$(hostname) can connect to $_"` 
+`ping -c 3 <remote_host_address> && echo "SUCCESS! - $(hostname) can connect to $_"` 
 
 
-Commands explanation
-===========
+# Commands explanation
 
 ### Docker basic commands
 
@@ -163,7 +167,7 @@ You can easily change configuration
 
 ENV:
 ----
-|       command                 |       value                   |
+|       variable name           |            value              |
 |-------------------------------|-------------------------------|
 |`MYSQL_CLUSTER_VERSION`        | `7.4`                         |
 |`MYSQL_CLUSTER_MICRO_VERSION`  | `12`                          |
