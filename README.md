@@ -4,10 +4,10 @@
 * Data Node
 * SQL Node
 ---
-##Introduction
+## Introduction
 
 
-##Build
+## Build
 
     git clone https://github.com/szunaj13pl/docker-mysql-cluster.git
     cd docker-mysql-cluster
